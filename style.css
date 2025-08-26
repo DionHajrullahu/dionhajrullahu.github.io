@@ -34,3 +34,11 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+.pic {
+    display: flex;
+    direction: row;
+    justify-content: start;
+    width: 100px;
+    height: 100px;
+}
