@@ -10,8 +10,17 @@ header {
     background: #1f2937;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;               
 }
+
+header p {
+    color: #ddd;
+    margin-left: 225px;
+}
+
 
 section {
     padding: 20px;
@@ -36,9 +45,8 @@ footer {
 }
 
 .pic {
-    display: flex;
-    direction: row;
-    justify-content: start;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
