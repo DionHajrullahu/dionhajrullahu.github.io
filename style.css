@@ -13,7 +13,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;               
+    gap: 15px;
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
 }
 
 header p {
@@ -29,11 +31,105 @@ section {
     background: white;
     margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project {
-    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+}
+
+#about h2 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+}
+
+#about p {
+    opacity: 0;
+    animation: slideInLeft 2s forwards;
+    animation-delay: 0.6s;
+}
+
+#projects {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.6s;
+}
+
+.project:nth-child(odd) {
+    animation: slideInLeft 3s forwards;
+}
+
+.project:nth-child(even) {
+    animation: slideInRight 2s forwards;
+}
+
+#skills h2 {
+    animation: fadeIn 1s forwards;
+}
+
+#skills li {
+    animation: slideInRight 3s forwards;
+}
+
+#contact {
+    animation: fadeIn 1s forwards;
+}
+
+.project:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.project:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.project:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.project:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 footer {
