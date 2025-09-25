@@ -1,5 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --accent: #ffdd20;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Inter';
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -17,46 +25,105 @@ header {
 }
 
 header p {
-    color: #ddd;
-    margin-left: 225px;
+    color: #ffdd20;
+    margin: auto;
 }
 
+header a {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 section {
     padding: 20px;
     max-width: 800px;
-    margin: auto;
     background: white;
-    margin-top: 20px;
+    margin: 30px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    background: #fff;
-    padding: 15px 20px;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.sections {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
-header,
-section:nth-of-type(odd),
-footer {
-  animation: slideInLeft 4s forwards;
+.sections a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.sections a:hover {
+    color: var(--accent);
+}   
+
+h2 {
+    color: var(--accent);
+}
+a {
+    color: var(--accent);
+}
+a:hover {
+    color: var(--accent);
+}
+
+.project {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+#contact a {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #ffdd50;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+#contact a:hover {
+    background: #e6c217;
+}
+
+section:nth-of-type(odd){
+    animation: slideInLeft 1.2s forwards;
 }
 
 section:nth-of-type(even) {
-  animation: slideInRight 4s forwards;
+    animation: slideInRight 1.2s forwards;
 }
 
-/* Optional staggered delays so they don't all appear instantly */
-header { animation-delay: 0.2s; }
-section:nth-of-type(1) { animation-delay: 0.4s; }
-section:nth-of-type(2) { animation-delay: 0.6s; }
-section:nth-of-type(3) { animation-delay: 0.8s; }
-section:nth-of-type(4) { animation-delay: 1s; }
-footer { animation-delay: 1.2s; }
+section:nth-of-type(1) {
+    animation-delay: 0.4s;
+}
+
+section:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+section:nth-of-type(3) {
+    animation-delay: 0.8s;
+}
+
+section:nth-of-type(4) {
+    animation-delay: 1s;
+}
 
 @keyframes slideInLeft {
     from {
@@ -97,7 +164,6 @@ footer {
     padding: 20px;
     background: navy;
     color: white;
-    margin-top: 20px;
 }
 
 .pic {
@@ -108,6 +174,12 @@ footer {
     object-fit: cover;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .project-pic {
     margin: 0 0 0 0;
 }
@@ -116,4 +188,31 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+#cv i {
+    color: black;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sections {
+        margin: 0;
+        text-decoration: underline;
+        align-items: center;
+    }
+
+    header p {
+        margin: 0;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
+        height: auto;
+    }
 }

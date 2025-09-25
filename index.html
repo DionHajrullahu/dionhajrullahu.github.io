@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Dion Hajrullahu – Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dion Hajrullahu - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+
 <body>
     <header>
-        <img class="pic" src="profile-img.png" alt="profile image">
-        <h1>Dion Hajrullahu</h1>
+        <div class="profile">
+            <img class="pic" src="profile-img.png" alt="profile image">
+            <h1>Dion Hajrullahu</h1>
+        </div>
         <p>Aspiring Software Engineer | RIT Kosovo</p>
+        <nav class="sections">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a third-year Computer Science student at RIT Kosovo with a strong interest in software development, web technologies, and cybersecurity. I've worked on real projects and participated in competitive hackathons.</p>
+        <p>I'm a third-year Computer Science student at RIT Kosovo with a strong interest in software development, web
+            technologies, and cybersecurity. I've worked on real projects and participated in competitive hackathons.
+        </p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>🔒 Intrusion Detection System - Hackathon Project</h3>
-            <p>Developed a web-based IDS using PHP, JavaScript, and Bootstrap during a 3-hour hackathon. Implemented alert logic and authentication flow. <strong>Won 2nd place</strong>.</p>
+            <p>Developed a web-based IDS using PHP, JavaScript, and Bootstrap during a 3-hour hackathon. Implemented
+                alert logic and authentication flow. <strong>Won 2nd place</strong>.</p>
             <p><strong>Tech:</strong> PHP, JS, Bootstrap, MySQL</p>
             <figure class="project-pic">
-            <img src="ids.png" alt="website screenshot">
-            <figcaption><a href="https://github.com/yourusername/ids-project" target="_blank">View on GitHub</a></figcaption>
+                <img src="ids.png" alt="website screenshot">
+                <figcaption><a href="https://github.com/yourusername/ids-project" target="_blank">View on GitHub</a>
+                </figcaption>
             </figure>
         </div>
 
         <div class="project">
             <h3>📋 Simple Course Management System (University Project)</h3>
-            <p>Built a database-driven course management system in MySQL and implemented SQL queries for student, course, and instructor data. Includes ER diagram and relational schema.</p>
+            <p>Built a database-driven course management system in MySQL and implemented SQL queries for student,
+                course, and instructor data. Includes ER diagram and relational schema.</p>
             <p><strong>Tech:</strong> MySQL, SQL, Database Design</p>
             <a href="https://github.com/yourusername/ids-project" target="_blank">View on GitHub</a>
         </div>
 
         <div class="project">
             <h3>💻 Front-end Bootcamp</h3>
-            <p>Developed a responsive enrollment page for a frontend bootcamp, allowing students to browse courses, register online, and subscribe to newsletters. Implemented form validation, interactive modals, and dynamic course filtering for a seamless user experience.</p>
+            <p>Developed a responsive enrollment page for a frontend bootcamp, allowing students to browse courses,
+                register online, and subscribe to newsletters. Implemented form validation, interactive modals, and
+                dynamic course filtering for a seamless user experience.</p>
             <p><strong>Tech:</strong> HTML, CSS, Bootstrap, JavaScript</p>
             <figure class="project-pic">
-            <img src="frontendBootcamp.png" alt="website screenshot">
-            <figcaption><a href="https://github.com/dionhajrullahu/bootcamp" target="_blank">View on GitHub</a></figcaption>
+                <img src="frontendBootcamp.png" alt="website screenshot">
+                <figcaption><a href="https://github.com/dionhajrullahu/bootcamp" target="_blank">View on GitHub</a>
+                </figcaption>
             </figure>
         </div>
     </section>
@@ -50,23 +73,53 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Programming Languages: PHP, JavaScript, Java, SQL, C++, C#</li>
-            <li>Web: HTML, CSS, Bootstrap</li>
-            <li>Tools: Git, GitHub, MySQL, Visual Studio, VS Code</li>
+            <li>
+                <bold>Programming Languages:</bold> PHP, JavaScript, Java, SQL, C++, C#
+            </li>
+            <li><strong>Web:</strong> HTML, CSS, Bootstrap</li>
+            <li><em>Tools:</em> Git, GitHub, MySQL, Visual Studio, VS Code</li>
             <li>Languages: English (C1), Albanian (Native), German (B2)</li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: dion.hajrullahu1@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/dion-hajrullahu-9680582a1/" target="_blank">Dion Hajrullahu</a></p>
-        <p>GitHub: <a href="https://github.com/DionHajrullahu" target="_blank">github.com/DionHajrullahu</a></p>
-        <p><a href="CV.pdf" download>Download My CV</a></p>
+
+        <div class="contact-item">
+            <span>Email:</span>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:dion.hajrullahu1@gmail.com">dion.hajrullahu1@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+            <span>LinkedIn:</span>
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/dion-hajrullahu-9680582a1/" target="_blank">Dion Hajrullahu</a>
+        </div>
+
+        <div class="contact-item">
+            <span>GitHub:</span>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/DionHajrullahu" target="_blank">github.com/DionHajrullahu</a>
+        </div>
+
+        <div class="contact-item" id="cv">
+            <a href="CV.pdf" download>Download My CV <i class="bi bi-download"></i></a>
+        </div>
     </section>
 
+
     <footer>
-        <p>© 2025 Dion Hajrullahu</p>
+         <div class="container position-relative">
+            <p> &copy; 2025 Dion Hajrullahu</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5" title="Back to Top">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
