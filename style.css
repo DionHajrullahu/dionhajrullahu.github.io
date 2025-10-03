@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-    --accent: #ffdd20;
+    --accent: #ffdd10;
 }
 
 body {
@@ -11,11 +11,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: linear-gradient(to right,#F0EAD6, #FFF, #F0EAD6);
 }
 
 header {
-    background: navy;
+    background: #000088;
     color: white;
     padding: 20px;
     display: flex;
@@ -25,7 +25,7 @@ header {
 }
 
 header p {
-    color: #ffdd20;
+    color: var(--accent);
     margin: auto;
 }
 
@@ -58,23 +58,17 @@ section {
     transition: color 0.3s ease;
 }
 
-.sections a:hover {
-    color: var(--accent);
-}   
-
 h2 {
     color: var(--accent);
 }
-a {
-    color: var(--accent);
-}
+
 a:hover {
     color: var(--accent);
 }
 
 .project {
-    background: #fff;
-    margin: 20px 0;
+    background: #FFF;
+    margin: 30px 0;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
@@ -160,10 +154,10 @@ section:nth-of-type(4) {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background: navy;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .pic {
