@@ -1,0 +1,239 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+/* Header */
+header {
+    color: white;
+    background-color: transparent;
+    font-size: 24px;
+    position: absolute; 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    z-index: 10;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+header .side_buttons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .side_buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+header .side_buttons a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Quotes (Playfair Display) */
+.quote {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Background Image */
+
+.bg_image {
+    width: 100%;
+    height: 625px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg_image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0));
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bg_image_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 64px; 
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 5; 
+    padding: 10px 20px;
+}
+
+/* Intro Section */
+
+.intro_text {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #1D2731;
+}
+
+.intro_text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro_text p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Property Cards */
+
+/* Preview properties */
+
+.preview_properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px 20px; 
+    padding: 20px;
+}
+
+.property {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.property:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.property_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.property_text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    color: white;
+    padding: 20px;
+}
+
+.property_text h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.property_text p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+/* why choose us section */
+
+.why_choose_us {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f1f3f5;
+}
+
+.why_choose_us h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #1D2731;
+}
+
+.reasons_grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.reason {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.reason h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1D2731;
+}
+
+.reason p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #3C4A57;
+}
